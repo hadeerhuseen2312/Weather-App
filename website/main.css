@@ -1,0 +1,19 @@
+.horizontal-line {
+  max-width: 1000px;
+  min-height: 5px;
+  margin-left:200px 
+}
+body{
+  background-color: antiquewhite;
+}
+#zip,#feelings{
+  margin-left: 300px;
+  margin-right: 300px;
+  
+}
+
+#generate,#entryHolder{
+  margin-left: 550px;
+  margin-right: 500px;
+}
+

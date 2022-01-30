@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="tailwindStyles.css" />
+    <script src="app.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body class="h-full">
+    <div>
+      <h1 class="text-white text-4xl text-center mt-8 mb-2">
+        Get The Weather Information With One Click!
+      </h1>
+
+      <div class="bg-white my-8 horizontal-line"></div>
+
+      <div id="userInput" class="flex flex-col">
+        <input type="text" id="zip" placeholder=" enter zip code here" />
+        <label for="feelings" class="text-pink-900 text-xl text-center mt-8 mb-2">
+          What do you think of the weather today?
+        </label>
+        <textarea id="feelings" cols="10" rows="10"></textarea>
+      </div>
+
+      <span id="errMsg" class="bg-red-200 text-red-600 hidden"></span>
+
+      <button
+        id="generate"
+        class="py-4 px-8 m-4 rounded-md text-xl cursor-pointer text-pink-900 font-bold bg-white border-pink-800 shadow-none hover:shadow-lg"
+        style="outline: none"
+      >
+        Get Weather Info
+      </button>
+
+      <div id="entryHolder" class="text-center my-4 hidden">
+        <div class="border-4 border-white text-white p-4 rounded-lg">
+          <div class="p-2">
+            <span class="text-xl">Date: </span>
+            <span
+              id="date"
+              class="inline-block p-1 font-bold bg-white rounded text-pink-900"
+            >
+            </span>
+          </div>
+
+          <div class="p-2">
+            <span class="text-xl">Temperature: </span>
+            <span
+              id="temp"
+              class="inline-block p-1 font-bold bg-white rounded text-pink-900"
+            >
+            </span>
+          </div>
+
+          <div class="p-2">
+            <span class="text-xl">Your Feelings: </span>
+            <span
+              id="content"
+              class="inline-block p-1 font-bold bg-white rounded text-pink-900"
+            >
+            </span>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
